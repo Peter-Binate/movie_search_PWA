@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/icons/icon48.png" type="image/x-icon">
+    <link rel="manifest" href="js/manifest.json">
+</head>
+<body>
+    <h1 class="h1 my-5 text-center">Search Movie</h1>
+    <div class="container">
+        <form class="d-flex" id="searchForm" method="GET">
+            <input id="searchInput" class="form-control mr-2" type="search" placeholder="Rechercher" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Rechercher</button>
+        </form>
+    </div>
+    <div class="container">
+        <ul id="movieList"></ul>
+    </div>    
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/Projet_MDS/Tp/service-worker.js')
+        }
+    </script>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/movieList.js"></script>
+</body>
+</html>

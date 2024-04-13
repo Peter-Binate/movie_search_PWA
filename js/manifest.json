@@ -1,0 +1,21 @@
+{
+    "name" : "Movie search",
+    "short_name" : "ms",
+    "start_url" : "/Projet_MDS/PWA/",
+    "display" : "standalone",
+    "background_color" : "#fff",
+    "theme_color" : "#fff",
+    "description" : "recherche de film",
+    "icons" : [
+        {
+            "src" : "../images/icons/icon48.png",
+            "sizes" : "48x48",
+            "type" : "image/png"
+        },
+        {
+            "src" : "../images/icons/icon512.png",
+            "sizes" : "512x512",
+            "type" : "image/png"
+        }
+    ]
+}
